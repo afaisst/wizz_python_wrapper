@@ -62,14 +62,16 @@ Remember that this does **not** change the Docker image. If you exit the environ
 First, list all the Docker "images" on your computer:
 
 ```
-Code
+docker ps -a
 ```
 
 Then choose the latest one and re-open:
 
 ```
-Code
+docker start -i <name>
 ```
+
+where `<name>` is the name of the container.
 
 Basically, this is like resume a `screen` or `byobu` session.
 
