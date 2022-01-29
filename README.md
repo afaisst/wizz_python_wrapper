@@ -59,7 +59,7 @@ pip install matplotlib
 
 Remember that this does **not** change the Docker image. If you exit the environment and restart the it, you will again have to install `matplotlib` (or whatever you installed. **However** there is a trick. You can "re-open" the environment using the following:
 
-First, list all the Docker "images" on your computer:
+First, list all the Docker local "images" on your computer:
 
 ```
 docker ps -a
@@ -68,11 +68,18 @@ docker ps -a
 Then choose the latest one and re-open:
 
 ```
-docker start -i <name>
+docker container start -i <name>
 ```
 
 where `<name>` is the name of the container.
 
 Basically, this is like resume a `screen` or `byobu` session.
+
+
+By the way, to check the Docker images, you can type
+
+```
+docker images
+```
 
 
