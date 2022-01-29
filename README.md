@@ -3,7 +3,6 @@
 This is a wrapper for the-wizz software (the 2019 version including STOMP maps) by Chris Morrison (see https://github.com/morriscb/the-wizz). 
 The code basically wrapps the command line commands into Python classes.
 
-For now, this is just a single file with an example at the end. In the future, this will be more organized (class file, example file, etc).
 
 The code is run in the Docker environment provided by the-wizz. 
 
@@ -43,7 +42,7 @@ The `-it` option lets you run Docker interactively and `bash` starts a bash shel
 After executing the above line of code, you are inside the Docker environment. Now, you can run Python as usual. For example, you can run the above code via
 
 ```
-python runWizz.py
+python WIZZexample.py
 ```
 
 (obviously after changing the paths and linking files etc.)
