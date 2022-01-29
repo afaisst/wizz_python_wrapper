@@ -250,7 +250,7 @@ class CreateStompMap(object):
 
         f.close()
 
-    def plotStompMap(self , stomp_map_path):
+    def plotStompMap(self , stomp_map_path , ra_limits=[150.9 , 149.3] , dec_limits=[1.55 , 2.85]):
         '''
         Creates a figure of a STOMP map (specifically of its table form created by `CreateNiceSTOMPTable()`)
 
@@ -287,8 +287,8 @@ class CreateStompMap(object):
         ax1.set_title(stomp_map_path.split("/")[-1] , fontsize=10)
         ax1.set_xlabel(r"R.A. [deg]")
         ax1.set_ylabel(r"Decl. [deg]")
-        ax1.set_xlim(150.9 , 149.3)
-        ax1.set_ylim(1.55 , 2.85)
+        ax1.set_xlim(ra_limits)
+        ax1.set_ylim(dec_limits)
 
         plt.savefig(stomp_map_path.replace(".map" , ".pdf") , bbox_inches="tight" )
         plt.close()
