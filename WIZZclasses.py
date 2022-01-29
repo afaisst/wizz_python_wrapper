@@ -258,7 +258,10 @@ class CreateStompMap(object):
         -----------
         stomp_map_path : `string`
             Full path to the STOMP map from which a table should be created.
-
+        ra_limits : `float`
+            R.A. limits for plotting (default is set to include COSMOS field)
+        dec_limits : `float`
+            Decl. limits for plotting (default is set to include COSMOS field)
 
         Output
         ------
